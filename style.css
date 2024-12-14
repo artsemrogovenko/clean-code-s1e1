@@ -13,7 +13,7 @@
 .header-img {
   width: 100%;
 }
-.more_inf {
+.more-info {
   font-family: fantasy, cursive;
 }
 
@@ -22,7 +22,7 @@
     text-align: center;
   }
 }
-.centered-main-page-element {
+.main-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -32,10 +32,10 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.new-task-container {
   display: flex;
 }
-#incompleteTasks,
+#incomplete-tasks,
 #completed-tasks {
   margin: 0;
   padding: 0px;

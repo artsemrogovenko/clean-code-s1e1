@@ -16,49 +16,55 @@
     </a>
   </header>
   <main class="main-container">
-    <section>
-      <h3 class="heading-new-task">Add Item</h3>
-      <div class="new-task-container">
-        <input id="new-task" class="input task" type="text">
-        <button class="button">Add</button>
+    <section class="block">
+      <h3 class="block__heading block__heading--new-task">Add Item</h3>
+      <div class="block__content">
+      <div class="new-task">
+        <input class="new-task__text task" type="text">
+        <button class="button button--add">Add</button>
+      </div>
       </div>
     </section>
-    <section>
-      <h3 class="heading">Todo</h3>
-      <ul id="incomplete-tasks">
+    <section class="block">
+      <h3 class="block__heading">Todo</h3>
+      <div class="block__content">
+      <ul class="incomplete-tasks">
         <li class="list-item">
           <input class="input checkbox" type="checkbox">
           <label class="label task">Pay Bills</label>
-          <input type="text" class="input task">
-          <button class="button edit">Edit</button>
-          <button class="button delete">
+          <input type="text" class="input-text task">
+          <button class="button button--edit">Edit</button>
+          <button class="button button--delete">
             <img class="delete-icon" src="./remove.svg" alt="delete icon">
           </button>
         </li>
-        <li class="list-item editMode">
+        <li class="list-item list-item--editmode">
           <input class="input checkbox" type="checkbox">
-          <label class="label task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="input task">
-          <button class="button edit">Save</button>
-          <button class="button delete">
+          <label class="label label--editmode task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="input-text input-text--editmode task">
+          <button class="button button--edit">Save</button>
+          <button class="button button--delete">
             <img class="delete-icon" src="./remove.svg" alt="delete icon">
           </button>
         </li>
       </ul>
+    </div>
     </section>
-    <section>
-      <h3 class="heading">Completed</h3>
-      <ul id="completed-tasks">
+    <section class="block">
+      <h3 class="block__heading">Completed</h3>
+      <div class="block__content">
+      <ul class="completed-tasks">
         <li class="list-item">
           <input class="input checkbox" type="checkbox" checked>
-          <label class="label task">See the Doctor</label>
-          <input type="text" class="input task">
-          <button class="button edit">Edit</button>
-          <button class="button delete">
+          <label class="label label--completed-task task">See the Doctor</label>
+          <input type="text" class="input-text task">
+          <button class="button button--edit">Edit</button>
+          <button class="button button--delete">
             <img class="delete-icon" src="./remove.svg" alt="delete icon">
           </button>
         </li>
       </ul>
+      </div>
     </section>
   </main>
   <script src="app.js"></script>
